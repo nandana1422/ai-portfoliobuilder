@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400");
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+::-moz-selection {
+  color: #fff;
+  background: #9FBE5A;
+}
+::selection {
+  color: #fff;
+  background: #9FBE5A;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 50px;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #16a085, #f4d03f) center/cover no-repeat;
+}
+
+h1 {
+  margin-bottom: 75px;
+  padding: 0 20vw;
+  font: 400 56px "Roboto Slab", serif;
+  font-size: 56px;
+  text-align: center;
+  color: #fff;
+}
+
+.form__contact {
+  max-width: 600px;
+  margin: 0 auto;
+  border-left: 30px solid white;
+  -o-border-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS44NnB4IiBoZWlnaHQ9IjUyLjMyNnB4IiB2aWV3Qm94PSIwIDAgNDEuODYgNTIuMzI2IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MS44NiA1Mi4zMjYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDB2MjUuMTYzaDcuMDk3YzAuNTAxLTQuOTg5LDQuNzEyLTguODg0LDkuODMzLTguODg0YzUuNDU4LDAsOS44ODQsNC40MjUsOS44ODQsOS44ODRzLTQuNDI1LDkuODg0LTkuODg0LDkuODg0Yy01LjEyMSwwLTkuMzMyLTMuODk1LTkuODMzLTguODg0SDB2MjUuMTYzaDQxLjg2VjBIMHoiLz48L3N2Zz4=) 5% 100% repeat;
+     border-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI0MS44NnB4IiBoZWlnaHQ9IjUyLjMyNnB4IiB2aWV3Qm94PSIwIDAgNDEuODYgNTIuMzI2IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA0MS44NiA1Mi4zMjYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0wLDB2MjUuMTYzaDcuMDk3YzAuNTAxLTQuOTg5LDQuNzEyLTguODg0LDkuODMzLTguODg0YzUuNDU4LDAsOS44ODQsNC40MjUsOS44ODQsOS44ODRzLTQuNDI1LDkuODg0LTkuODg0LDkuODg0Yy01LjEyMSwwLTkuMzMyLTMuODk1LTkuODMzLTguODg0SDB2MjUuMTYzaDQxLjg2VjBIMHoiLz48L3N2Zz4=) 5% 100% repeat;
+  border-image-width: 0px 0px 0px 30px;
+  transform: translateY(100%);
+  -webkit-animation: init 1s ease-in-out forwards;
+          animation: init 1s ease-in-out forwards;
+}
+.form__contact fieldset {
+  position: relative;
+  margin: 0;
+  padding: 30px 30px 40px 80px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  font: 24px "Shadows Into Light", cursive;
+  background: #fff linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 0) 0 20px/100% 40px;
+}
+.form__contact fieldset:after {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  content: "";
+  height: 100%;
+  width: 1px;
+  border-left: double #E08183;
+}
+.form__contact p {
+  margin: 0 0 40px 0;
+  line-height: 40px;
+  color: #333;
+}
+.form__contact span {
+  position: relative;
+  line-height: 40px;
+}
+.form__contact button {
+  margin-top: 40px;
+  float: right;
+  border: none;
+  font-family: "Shadows Into Light", cursive;
+  color: #E08183;
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+.form__contact button:hover {
+  transform: translateX(10px);
+}
+
+.form__field {
+  display: inline;
+  color: #7DB665;
+  outline: none;
+}
+.form__field:empty {
+  display: inline-block;
+  color: #DDD;
+}
+.form__field:empty:before, .form__field:empty:focus:before {
+  content: attr(data-placeholder);
+}
+
+svg {
+  display: none;
+}
+
+@-webkit-keyframes init {
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes init {
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes do-blur {
+  0% {
+    filter: url(#blur4);
+  }
+  25% {
+    filter: url(#blur3);
+  }
+  50% {
+    filter: url(#blur2);
+  }
+  75% {
+    filter: url(#blur1);
+  }
+  100% {
+    filter: url(#blur0);
+  }
+}
+@keyframes do-blur {
+  0% {
+    filter: url(#blur4);
+  }
+  25% {
+    filter: url(#blur3);
+  }
+  50% {
+    filter: url(#blur2);
+  }
+  75% {
+    filter: url(#blur1);
+  }
+  100% {
+    filter: url(#blur0);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Create your portfolio </h1>
+        
+        <form  id="submit-form" class="form__contact" action="/create-portfolio" method="POST">
+          <fieldset>
+        
+            <p>
+              My name is 
+              <input type="text" name="name" placeholder="your name" tabindex="1" value="{{data.name}}" required /> and my 
+              tag line is   
+              <input type="text" name="title" placeholder="your Tag line" tabindex="2" value="{{data.title}}" required />
+            </p>
+        
+            <p>
+              My profile picture URL is 
+              <input type="text" name="profile_picture" placeholder="Profile picture URL" tabindex="3" value="{{data.profile_picture}}" required />
+            </p>
+        
+            <p>
+              I studied my 
+              <input type="text" name="program_name_1" placeholder="Program name" tabindex="4" value="{{data.program_name_1}}" required />
+              from 
+              <input type="text" name="program_1_university" placeholder="School name" tabindex="5" value="{{data.program_1_university}}" required />. 
+              Year: 
+              <input type="text" name="program1_year" placeholder="Year" tabindex="6" value="{{data.program1_year}}" required />. 
+              Skills learned: 
+              <input type="text" name="program1_skills" placeholder="Skills" tabindex="7" value="{{data.program1_skills}}" required />
+            </p>
+        
+            <p>
+              I studied my 
+              <input type="text" name="program_name_2" placeholder="College Program Name" tabindex="8" value="{{data.program_name_2}}" required />
+              from 
+              <input type="text" name="program_2_university" placeholder="College Name" tabindex="9" value="{{data.program_2_university}}" required />. 
+              Year: 
+              <input type="text" name="program2_year" placeholder="Year" tabindex="10" value="{{data.program2_year}}" required />. 
+              Skills learned: 
+              <input type="text" name="program2_skills" placeholder="Skills" tabindex="11" value="{{data.program2_skills}}" required />
+            </p>
+        
+            <p>My project details</p>
+        
+            <p>
+              My first project is  
+              <input type="text" name="project1_name" placeholder="Project Name" tabindex="12" value="{{data.project1_name}}" required />
+              about 
+              <input type="text" name="project1_description" placeholder="About the project" tabindex="13" value="{{data.project1_description}}" required />. 
+              Technologies used:  
+              <input type="text" name="project1_skills" placeholder="Technologies" tabindex="14" value="{{data.project1_skills}}" required />
+            </p>
+        
+            <p>
+              My second project is  
+              <input type="text" name="project2_name" placeholder="Project Name" tabindex="15" value="{{data.project2_name}}" required />
+              about 
+              <input type="text" name="project2_description" placeholder="About the project" tabindex="16" value="{{data.project2_description}}" required />. 
+              Technologies used:  
+              <input type="text" name="project2_skills" placeholder="Technologies" tabindex="17" value="{{data.project2_skills}}" required />
+            </p>
+        
+            <p>
+              My third project is  
+              <input type="text" name="project3_name" placeholder="Project Name" tabindex="18" value="{{data.project3_name}}" required />
+              about 
+              <input type="text" name="project3_description" placeholder="About the project" tabindex="19" value="{{data.project3_description}}" required />. 
+              Technologies used:  
+              <input type="text" name="project3_skills" placeholder="Technologies" tabindex="20" value="{{data.project3_skills}}" required />
+            </p>
+        
+            <p>
+              My email is 
+              <input type="email" name="email" placeholder="Email" tabindex="21" value="{{data.email}}" required />
+            </p>
+        
+            <p>
+              My location is 
+              <input type="text" name="location" placeholder="Location" tabindex="22" value="{{data.location}}" required />
+            </p>
+        
+            <p>
+              My phone number is 
+              <input type="text" name="phone" placeholder="Phone" tabindex="23" value="{{data.phone}}" required />
+            </p>
+        
+            <p>
+              About me: 
+              <textarea name="about_me" id="about_me_id" placeholder="Tell us about yourself" name="about_me" value="{{data.about_me}}" tabindex="24" required>{{data.about_me}}</textarea>
+              <button type="submit"  onclick="generateAboutMe()">Generate</button>
+
+            </p>
+            
+        
+            <button type="submit"  class="button button--xlarge" tabindex="25">Send message &#187;</button>
+          </fieldset>
+        </form>
+        
+      </div>
+      
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+        <defs>
+          <filter id="blur0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0 0" />
+          </filter>
+          <filter id="blur1">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0 5" />
+          </filter>
+          <filter id="blur2">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0 10" />
+          </filter>
+          <filter id="blur3">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0 15" />
+          </filter>
+          <filter id="blur4">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="0 20" />
+          </filter>
+        </defs>
+      </svg>
+      
+
+
+      <script>
+        function generateAboutMe(){
+          var about_me_input = document.getElementById('about_me_id')
+          about_me_input.value="generating..."
+          generateButton = document.getElementById('submit-form').submit()
+        }
+      </script>
+</body>
+</html>
